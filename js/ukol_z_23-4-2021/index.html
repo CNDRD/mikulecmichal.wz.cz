@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="/resources/fav.png" />
+    <title>Mikulec</title>
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/res/css.css" />
+
+    <script src="js.js" charset="utf-8"></script>
+
+    <style media="screen">
+      #monkey table:last-child td {
+        width: 5rem;
+        height: 5rem;
+      }
+    </style>
+
+  </head>
+  <body class="dark-mode">
+
+    <!-- Back Button -->
+    <a href="/index.html" class='btn-back'>🔙</a>
+
+    <!-- Midel -->
+    <div class="middel">
+      <!-- Card -->
+      <div class="content w-400 mw-full p-card text-center">
+
+        <form class="form-group mb-0 shadow card" action="javascript:doTheThing()" name="formularicek" id="formularicek">
+          <h2 class="card-title font-weight-light">Graf teplot</h2>
+          <input class="form-control mb-5" type="number" name="po" placeholder="Pondělí" min="0" max="60" required />
+          <input class="form-control mb-5" type="number" name="ut" placeholder="Úterý" min="0" max="60" required />
+          <input class="form-control mb-5" type="number" name="st" placeholder="Středa" min="0" max="60" required />
+          <input class="form-control mb-5" type="number" name="ct" placeholder="Čtvrtek" min="0" max="60" required />
+          <input class="form-control" type="number" name="pa" placeholder="Pátek" min="0" max="60" required />
+          <input class="btn btn-block btn-success mt-20" type="submit" value="Zobrazit graf teplot" />
+        </form>
+
+        <div class="text-center middel mt-20 pb-0 card shadow d-none" id="monkey">
+
+          <table>
+            <tr id="tablulky">
+            </tr>
+            <tr>
+              <td>Po</td>
+              <td>Út</td>
+              <td>St</td>
+              <td>Čt</td>
+              <td>Pá</td>
+            </tr>
+          </table>
+
+        </div>
+
+      </div><!-- Card -->
+    </div><!-- Midel -->
+
+  </body>
+</html>

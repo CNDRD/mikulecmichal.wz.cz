@@ -1,0 +1,28 @@
+.is-gone{display: none !important;}
+.text-white{color: #ffffff !important;}
+
+.text-discord {color: #7289da !important;}
+.badge.badge-discord {color: #ffffff;background-color: #7289da;border-color: #7289da;}
+
+.pls-no-click{-webkit-user-select: none;-moz-user-select: -moz-none;-ms-user-select: none;user-select: none;}
+
+.midel{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.midel-weird{height: 100%;padding: 0;margin: 0;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;align-items: center;justify-content: center;}
+.middel{ display:grid; place-items:center; height:100%; }
+
+.font-size-69{font-size: 6.9rem}
+.font-size-30{font-size: 3.0rem}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none;margin: 0;}
+
+.btn-back{
+  z-index: 12;
+  line-height: 3.5rem;
+  font-size: 3.5rem;
+  text-align: center;
+  text-decoration:
+  none; position:
+  fixed; left: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+.btn-back:hover{ text-decoration: none; }

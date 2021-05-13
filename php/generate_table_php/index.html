@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="/res/fav.png" />
+    <title>Mikulec</title>
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/res/css.css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+      *{font-family: 'Montserrat Alternates', sans-serif;}
+    </style>
+
+  </head>
+  <body class="dark-mode">
+
+    <!-- Back Button -->
+    <a href="/index.html" class='btn-back'>🔙</a>
+
+    <!-- Midel -->
+    <div class="midel">
+      <!-- Card -->
+      <div class="card shadow w-400 mw-full p-card text-center">
+
+        <h2 class="card-title font-weight-light">Generování tabulky PHP</h2>
+
+        <form action="lmao.php" method="post" class="form-inline">
+          <input class="form-control btn-block font-weight-light form-control-lg text-center" type="number" name="rows" step="1" min="0" max="20" placeholder="Počet řádků" required="required" />
+          <input class="form-control btn-block font-weight-light form-control-lg text-center" type="number" name="cols" step="1" min="0" max="20" placeholder="Počet sloupců" required="required" />
+          <input class="btn btn-success btn-block font-weight-bolder mt-20" type="submit" value="Generovat" />
+        </form>
+
+      </div><!-- Card -->
+    </div><!-- Midel -->
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Favicon and title -->
+    <link rel="icon" href="../res/fav.png" />
+    <title>Mikulec</title>
+
+    <!-- Halfmoon CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../res/css.css" />
+
+  </head>
+  <body class="dark-mode">
+
+    <!-- Back Button -->
+    <a href="/" class='btn-back'>🔙</a>
+
+    <!-- Midel -->
+    <div class="midel">
+      <!-- Card -->
+      <div class="card shadow w-400 mw-full p-card text-center">
+
+        <h2 class="card-title font-weight-light">Zadání RGB čísel přes PHP</h2>
+
+        <form action="lmao.php" method="post">
+
+          <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Red</h4>
+            <input  type="number" name="r" class="form-control form-control-lg text-center" placeholder="0-255" required="required" min="0" max="255" />
+          </div>
+
+          <div class="alert alert-success my-10" role="alert">
+            <h4 class="alert-heading">Green</h4>
+            <input  type="number" name="g" class="form-control form-control-lg text-center" placeholder="0-255" required="required" min="0" max="255" />
+          </div>
+
+          <div class="alert alert-primary" role="alert">
+            <h4 class="alert-heading">Blue</h4>
+            <input  type="number" name="b" class="form-control form-control-lg text-center" placeholder="0-255" required="required" min="0" max="255" />
+          </div>
+
+          <input class="btn btn-block mt-20" type="submit" value="Převod" />
+        </form>
+
+      </div><!-- Card -->
+    </div><!-- Midel -->
+
+  </body>
+</html>

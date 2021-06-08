@@ -36,14 +36,23 @@
             <h2>GitHub <i class="fab fa-github-alt"></i></h2>
           </a>
           <div class="switch-buttons">
-            <button class="btn" id="js" onclick="amogus('js')">JS</button>
+            <button class="btn active" id="js" onclick="amogus('js')">JS</button>
             <button class="btn" id="csharp" onclick="amogus('csharp')">C#</button>
-            <button class="btn active" id="php" onclick="amogus('php')">PHP</button>
+            <button class="btn" id="php" onclick="amogus('php')">PHP</button>
           </div>
         </div>
 
         <!-- JS Cards start -->
-        <div class="cards d-none" id='jsCards'>
+        <div class="cards" id='jsCards'>
+
+          <a href="/js/maturita_dec_to_bin" class="card">
+            <div class="card-info">
+              <h2>Převody Jednotek</h2>
+              <p>8.6. 2021</p>
+            </div>
+            <h2 class="badge">JS</h2>
+          </a>
+
           <a href="/js/ukol_z_23-4-2021" class="card">
             <div class="card-info">
               <h2>Úkol z 23.4. 2021</h2>
@@ -51,6 +60,7 @@
             </div>
             <h2 class="badge">JS</h2>
           </a>
+
         </div>
         <!-- JS Cards end -->
 
@@ -77,7 +87,7 @@
         <!-- C# Cards end -->
 
         <!-- PHP Cards start -->
-        <div class="cards" id='phpCards'>
+        <div class="cards d-none" id='phpCards'>
 
           <a href="/php/maturita_mail" class="card">
             <div class="card-info">

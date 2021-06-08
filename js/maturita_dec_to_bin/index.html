@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="width:100%">
+  <head>
+    <meta charset="utf-8">
+    <title>Převody Jednotek</title>
+
+    <style media="screen">
+      #zapis{
+        text-align:center;
+      }
+    </style>
+
+  </head>
+  <body style="width:100%">
+
+    <center>
+      <button type="button" onclick="binToDec()">Binary to Decimal</button>
+      <button type="button" onclick="decToBin()">Decimal to Binary</button>
+    </center>
+
+    <div id="zapis"></div>
+
+
+    <script type="text/javascript">
+      function binToDec(){
+        document.getElementById("zapis").innerHTML = "";
+
+        let zadane = prompt("Zadejte číslo pro převod:");
+        while (zadane != parseInt(zadane) || parseInt(zadane) < 0 || parseInt(zadane) > 15) {
+          zadane = prompt("Zadejte ČÍSLO pro převod (0-15):");
+        }
+
+        let z = parseInt(zadane);
+
+        let a = parseInt( z % 2 );
+        let a1 = Math.floor( z / 2 );
+
+        let b = parseInt( a1 % 2 );
+        let b1 = Math.floor( a1 / 2 );
+
+        let c = parseInt( b1 % 2 );
+        let c1 = Math.floor( b1 / 2 );
+
+        let d = parseInt( c1 % 2 );
+
+        document.getElementById("zapis").innerHTML = `${d}${c}${b}${a}`;
+      };
+
+      function decToBin(){
+        document.getElementById("zapis").innerHTML = "";
+
+        let z = prompt("Zadejte číslo pro převod:");
+        while (z != parseInt(z) || parseInt(z) < 0 || parseInt(z) > 1111) {
+          z = prompt("Zadejte ČÍSLO pro převod (0000-1111):");
+        }
+
+        z = parseInt(z);
+
+        let a = parseInt( z % 10 * 1 );
+        let b = parseInt( z / 10 % 10 * 2 );
+        let c = parseInt( z / 100 % 10 * 4 );
+        let d = parseInt( z / 1000 * 8 );
+
+        document.getElementById("zapis").innerHTML = `${a + b + c + d}`;
+
+      };
+
+    </script>
+
+
+  </body>
+</html>

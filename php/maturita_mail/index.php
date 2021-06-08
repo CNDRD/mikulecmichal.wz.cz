@@ -29,8 +29,8 @@
           'if ($_POST)' tam musí být, aby to jelo až po odeslání formuláře
           Jinak bude házet chyby že chybí hodnoty
           */
-          if ($_POST) {
-            mail($_POST['komu'], $_POST['predmet'], $_POST['text'])
+          if ($_POST){
+            mail($_POST['komu'], $_POST['predmet'], $_POST['text']);
           }
 
         ?>

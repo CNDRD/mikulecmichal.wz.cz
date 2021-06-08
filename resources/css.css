@@ -79,8 +79,27 @@ kbd {
 .btn:focus {
   outline: none;
 }
-.btn.active{
+.btn.active {
   background: linear-gradient( to right bottom, rgba(111, 233, 201, 0.4), rgba(108, 219, 235, 0.7) );
+}
+
+.btn.github {
+  text-decoration: none;
+  width: auto;
+  font-size: 1rem;
+}
+.btn.github:hover {
+  transform: scale(1.2);
+}
+.btn.github h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.btn.github h2 i {
+  margin-left: 7%;
 }
 
 .glass {

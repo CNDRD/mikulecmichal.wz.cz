@@ -10,6 +10,10 @@
 
         <!-- Vertikální centrování na Skalku -->
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--
+        Veškerý `style="..."` (a tadyto 👆 brekeke) je jenom proto, aby byla tabulka na střed
+        a k Maturitě není potřeba
+        -->
 
         <!-- `action="index.php"` a PHP kód může být v tomhle souboru a nemusí být extra-->
         <form style="width:33%" action="index.php" method="post">
